@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-// imported navbar 
-import Navbar from "./navbar"
+
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-  {/* Added Navbar implementation after the main heading  */}
-    <Navbar/>
+ 
+
       <div
         style={{
           margin: `0 auto`,
