@@ -1,6 +1,6 @@
 import * as React from "react"
-
 import { Link } from "gatsby"
+
 
 const Navbar = ({ siteTitle }) => (
   <div style={{
@@ -18,6 +18,7 @@ const Navbar = ({ siteTitle }) => (
         
          
         }}>
+          {/* Navbar menu options  */}
         <li id='dat'> <Link to ='/' >Home </Link></li>
         <li id='dat'> <Link to ='/page-2' >Page 2 </Link></li>
         <li id='dat'><Link to ='/using-typescript' > TypeScript</Link></li>
