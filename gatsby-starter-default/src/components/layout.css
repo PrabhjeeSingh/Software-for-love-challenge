@@ -52,11 +52,19 @@ template {
 }
 a {
   background-color: transparent;
+  
+ 
   -webkit-text-decoration-skip: objects;
+  color:inherit;
+}
+li>a{
+  text-decoration: none;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: inherit;
+ 
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -490,6 +498,18 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  color: white;
+  float:left;
+  display: block;
+  
+ 
+   margin-left: 1.8rem;
+  margin-right: 0.1rem; 
+      
+  
+}
+#menu{
+  display: none;
 }
 ol li {
   padding-left: 0;
@@ -594,4 +614,11 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+
+  li{
+    display: block;
+    float: none;
+  }
+ 
+
 }
