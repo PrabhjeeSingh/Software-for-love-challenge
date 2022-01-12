@@ -1,5 +1,5 @@
 import * as React from "react"
-import PropTypes from "prop-types"
+
 import { Link } from "gatsby"
 
 const Navbar = ({ siteTitle }) => (
@@ -10,17 +10,22 @@ const Navbar = ({ siteTitle }) => (
 
       <ul style ={{
          listStyle:`none`,
-         display: 'flex',
-         justifyContent: 'space-evenly',
-      
+         overflow:'hidden',
+         margin: `0 auto`,
+        maxWidth: 960,
+        fontSize:'1.4rem'
+        
+        
          
         }}>
-        <li > <Link to ='/' >Home </Link></li>
-        <li> <Link to ='/page-2' >Page 2 </Link></li>
-        <li><Link to ='/using-typescript' > TypeScript</Link></li>
-        <li><Link to ='/using-ssr' > SSR</Link></li>
-        <li><Link to ='/using-dsg' > DSG</Link> </li>   
+        <li id='dat'> <Link to ='/' >Home </Link></li>
+        <li id='dat'> <Link to ='/page-2' >Page 2 </Link></li>
+        <li id='dat'><Link to ='/using-typescript' > TypeScript</Link></li>
+        <li id='dat'><Link to ='/using-ssr' > SSR</Link></li>
+        <li id='dat'><Link to ='/using-dsg' > DSG</Link> </li>   
 
+
+     
 
       </ul>
 
